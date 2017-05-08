@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="4" end="25">
-  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="477" time="2017-05-08T02:06:24+00:00" unixtime="1494209184" sha1="6f9af45169034a81895dcef543c346fa76f55619" relative="Calc.php"/>
-  <member name="values" visibility="private" static="false" line="6"/>
-  <constructor name="__construct" start="8" end="11" abstract="false" final="false" static="false" visibility="public">
+<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="7" end="48">
+  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="1053" time="2017-05-08T02:49:34+00:00" unixtime="1494211774" sha1="04b32c12cb1ca606cf103e36e04db0780a40932e" relative="Calc.php"/>
+  <docblock>
+    <description compact="Calc implements the calulation methods."/>
+  </docblock>
+  <member name="values" visibility="private" static="false" line="10">
+    <docblock>
+      <var description="Should contain command line arguments" type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="12" end="15" abstract="false" final="false" static="false" visibility="public">
     <parameter name="params" byreference="false" type="{unknown}"/>
   </constructor>
-  <method name="sum" start="13" end="24" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="sum" start="22" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Count the sum of the arguments upto 2 numbers."/>
+      <return type="integer"/>
+      <throws description="If arguments are more than two" type="object">
+        <type full="Exeception" namespace="" name="Exeception"/>
+      </throws>
+    </docblock>
+  </method>
+  <method name="add" start="39" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Count the sum of the arguments upto n numbers."/>
+      <return type="integer"/>
+    </docblock>
+  </method>
 </class>

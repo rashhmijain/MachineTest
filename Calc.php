@@ -41,7 +41,7 @@ class Calc
         try {
             $numbers = explode(',', $this->values);
             echo array_sum($numbers);
-        } catch(Exception $e) {
+        } catch (Exception $e) {
             echo $e->getMessage();
         }
     }

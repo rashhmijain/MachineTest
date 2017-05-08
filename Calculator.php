@@ -10,7 +10,7 @@ try {
 
             if ($argv[1] == 'sum') {
                 $cal->sum();
-            } elseif($argv[1] == 'add') {
+            } elseif ($argv[1] == 'add') {
                 $cal->add();
             }
         } else {
