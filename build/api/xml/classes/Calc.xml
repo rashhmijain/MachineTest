@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="7" end="50">
-  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="1162" time="2017-05-08T03:02:48+00:00" unixtime="1494212568" sha1="193b76b9d188798f3daff6915b0b8b66ca3318b4" relative="Calc.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="7" end="58">
+  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="1427" time="2017-05-08T03:31:36+00:00" unixtime="1494214296" sha1="87bb7d6b1a758676b87a226555b6354150a0976a" relative="Calc.php"/>
   <docblock>
     <description compact="Calc implements the calulation methods."/>
   </docblock>
@@ -21,10 +21,13 @@
       </throws>
     </docblock>
   </method>
-  <method name="add" start="39" end="49" abstract="false" final="false" static="false" visibility="public">
+  <method name="add" start="40" end="57" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Count the sum of the arguments upto n numbers."/>
       <return type="integer"/>
+      <throws description="Exception if number is negative" type="object">
+        <type full="an" namespace="" name="an"/>
+      </throws>
     </docblock>
   </method>
 </class>

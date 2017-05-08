@@ -35,14 +35,22 @@ class Calc
     /**
      * Count the sum of the arguments upto n numbers.
      * @return integer
+     * @throws an Exception if number is negative
      */
     public function add()
     {
         try {
+            $sum = 0;
             // Replaces any \n characters with comma
             $numbers = str_replace("n", ",", $this->values);
             $numbers = explode(',', $numbers);
-            echo array_sum($numbers);
+            foreach ($numbers as $num) {
+                if($num < 0) {
+                    throw new Exception('Negative numbers not allowed.');
+                }
+                $sum += $num;
+            }
+            echo $sum;
         } catch (Exception $e) {
             echo $e->getMessage();
         }
