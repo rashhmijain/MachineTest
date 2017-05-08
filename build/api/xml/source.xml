@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<source xmlns="http://xml.phpdox.net/src">
+  <dir name="/var/www/html/MachineTest">
+    <file name="Calculator.php" size="503" time="2017-05-08T02:06:20+00:00" unixtime="1494209180" sha1="e103872a9ef35a7b6b60aa120dc4b4785fbc636b" xml="tokens/Calculator.php.xml"/>
+    <file name="Calc.php" size="477" time="2017-05-08T02:06:24+00:00" unixtime="1494209184" sha1="6f9af45169034a81895dcef543c346fa76f55619" xml="tokens/Calc.php.xml"/>
+    <dir name="tests">
+      <file name="CalculatorTest.php" size="0" time="2017-05-07T16:33:05+00:00" unixtime="1494174785" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" xml="tokens/tests/CalculatorTest.php.xml"/>
+    </dir>
+  </dir>
+</source>

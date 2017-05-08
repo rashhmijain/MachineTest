@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="4" end="25">
+  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="477" time="2017-05-08T02:06:24+00:00" unixtime="1494209184" sha1="6f9af45169034a81895dcef543c346fa76f55619" relative="Calc.php"/>
+  <member name="values" visibility="private" static="false" line="6"/>
+  <constructor name="__construct" start="8" end="11" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="params" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="sum" start="13" end="24" abstract="false" final="false" static="false" visibility="public"/>
+</class>

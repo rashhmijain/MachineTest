@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/var/www/html/MachineTest">
+  <namespace name="">
+    <class name="Calc" src="Calc.php" xml="classes/Calc.xml"/>
+  </namespace>
+</index>
