@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="7" end="62">
-  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="1617" time="2017-05-08T03:34:10+00:00" unixtime="1494214450" sha1="7c3e60b66e5102970c053dd98de605a5811a4d8f" relative="Calc.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="7" end="68">
+  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="1806" time="2017-05-08T03:39:03+00:00" unixtime="1494214743" sha1="ba8fb10243fb607b16c86d48458cbc927493bacc" relative="Calc.php"/>
   <docblock>
     <description compact="Calc implements the calulation methods."/>
   </docblock>
@@ -21,7 +21,7 @@
       </throws>
     </docblock>
   </method>
-  <method name="add" start="40" end="61" abstract="false" final="false" static="false" visibility="public">
+  <method name="add" start="40" end="67" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Count the sum of the arguments upto n numbers."/>
       <return type="integer"/>

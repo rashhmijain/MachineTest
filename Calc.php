@@ -45,8 +45,14 @@ class Calc
             $numbers = str_replace("n", ",", $this->values);
             $numbers = explode(',', $numbers);
             foreach ($numbers as $num) {
-                if($num < 0) {
-                    $neg = array_filter($numbers, function($x) {
+                //Ignoring value above 1000
+                if ($num > 1000) {
+                    continue;
+                }
+
+                //Throwing Exception if number is negative
+                if ($num < 0) {
+                    $neg = array_filter($numbers, function ($x) {
                         return $x < 0;
                     });
                     $neg = implode(',', $neg);
