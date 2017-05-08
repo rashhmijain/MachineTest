@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/MachineTest" file="Calculator.php" realpath="/var/www/html/MachineTest/Calculator.php" size="704" time="2017-05-08T03:45:29+00:00" unixtime="1494215129" sha1="02c2202259cc29a492328cbfba1b4c7df3d409e1" relative="Calculator.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/MachineTest" file="Calculator.php" realpath="/var/www/html/MachineTest/Calculator.php" size="843" time="2017-05-08T05:02:09+00:00" unixtime="1494219729" sha1="869be61fe24057c4627b01f57bdedc75af426c96" relative="Calculator.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -104,6 +104,36 @@
   </line>
   <line no="9">
     <token name="T_WHITESPACE">            </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$arg_value</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'\\'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="10">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">InvalidArgumentException</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Invalid parameter.'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="11">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="12">
+    <token name="T_WHITESPACE">            </token>
     <token name="T_VARIABLE">$cal</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -116,8 +146,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="10"/>
-  <line no="11">
+  <line no="13"/>
+  <line no="14">
     <token name="T_WHITESPACE">            </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
@@ -134,7 +164,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="12">
+  <line no="15">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$cal</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
@@ -143,7 +173,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="13">
+  <line no="16">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
     <token name="T_WHITESPACE"> </token>
@@ -162,16 +192,17 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="14">
+  <line no="17">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$cal</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">add</token>
+    <token name="T_STRING">operation</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'+'</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="15">
+  <line no="18">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
     <token name="T_WHITESPACE"> </token>
@@ -190,20 +221,21 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="16">
+  <line no="19">
     <token name="T_WHITESPACE">                </token>
     <token name="T_VARIABLE">$cal</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">multiply</token>
+    <token name="T_STRING">operation</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'*'</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="17">
+  <line no="20">
     <token name="T_WHITESPACE">            </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="18">
+  <line no="21">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
     <token name="T_WHITESPACE"> </token>
@@ -211,7 +243,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="19">
+  <line no="22">
     <token name="T_WHITESPACE">            </token>
     <token name="T_THROW">throw</token>
     <token name="T_WHITESPACE"> </token>
@@ -223,11 +255,11 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="20">
+  <line no="23">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="21">
+  <line no="24">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
     <token name="T_WHITESPACE"> </token>
@@ -235,7 +267,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="22">
+  <line no="25">
     <token name="T_WHITESPACE">        </token>
     <token name="T_THROW">throw</token>
     <token name="T_WHITESPACE"> </token>
@@ -247,11 +279,11 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="23">
+  <line no="26">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="24">
+  <line no="27">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_CATCH">catch</token>
@@ -264,7 +296,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="25">
+  <line no="28">
     <token name="T_WHITESPACE">    </token>
     <token name="T_ECHO">echo</token>
     <token name="T_WHITESPACE"> </token>
@@ -275,8 +307,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="26">
+  <line no="29">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="27"/>
+  <line no="30"/>
 </source>

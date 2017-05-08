@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="7" end="103">
-  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="2898" time="2017-05-08T03:52:03+00:00" unixtime="1494215523" sha1="0f2aa6b217ccf9f339fa0889fe8d984d677fd4f2" relative="Calc.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="7" end="97">
+  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="2787" time="2017-05-08T05:02:04+00:00" unixtime="1494219724" sha1="753f381b1271a3863d76f69e1cdaac48dce21964" relative="Calc.php"/>
   <docblock>
     <description compact="Calc implements the calulation methods."/>
   </docblock>
@@ -21,22 +21,15 @@
       </throws>
     </docblock>
   </method>
-  <method name="add" start="40" end="67" abstract="false" final="false" static="false" visibility="public">
+  <method name="operation" start="41" end="96" abstract="false" final="false" static="false" visibility="public">
     <docblock>
-      <description compact="Count the sum of the arguments upto n numbers."/>
+      <description compact="Perform operation on arguments based on parameter passed."/>
+      <param type="string"/>
       <return type="integer"/>
       <throws description="Exception if number is negative" type="object">
         <type full="an" namespace="" name="an"/>
       </throws>
     </docblock>
-  </method>
-  <method name="multiply" start="75" end="102" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="Calculate multiplication of the arguments, upto n numbers."/>
-      <return type="integer"/>
-      <throws description="Exception if number is negative" type="object">
-        <type full="an" namespace="" name="an"/>
-      </throws>
-    </docblock>
+    <parameter name="op" byreference="false" type="{unknown}"/>
   </method>
 </class>

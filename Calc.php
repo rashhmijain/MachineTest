@@ -33,69 +33,63 @@ class Calc
     }
 
     /**
-     * Count the sum of the arguments upto n numbers.
+     * Perform operation on arguments based on parameter passed.
+     * @param string
      * @return integer
      * @throws an Exception if number is negative
      */
-    public function add()
+    public function operation($op)
     {
         try {
-            $sum = 0;
-            // Replaces any \n characters with comma
-            $numbers = str_replace("n", ",", $this->values);
-            $numbers = explode(',', $numbers);
-            foreach ($numbers as $num) {
-                //Ignoring value above 1000
-                if ($num > 1000) {
-                    continue;
-                }
-
-                //Throwing Exception if number is negative
-                if ($num < 0) {
-                    $neg = array_filter($numbers, function ($x) {
-                        return $x < 0;
-                    });
-                    $neg = implode(',', $neg);
-                    throw new Exception('Negative numbers [' . $neg . '] not allowed.');
-                }
-                $sum += $num;
+            if ($op === '+') {
+                $res = 0;
+            } elseif ($op === '*') {
+                $res = 1;
+            } else {
+                throw new InvalidArgumentException('Invalid parameter.');
             }
-            echo $sum;
-        } catch (Exception $e) {
-            echo $e->getMessage();
-        }
-    }
 
-    /**
-     * Calculate multiplication of the arguments, upto n numbers.
-     * @return integer
-     * @throws an Exception if number is negative
-     */
+            $delimiter = ',';
+            //Assuming this list of delimiters
+            $delimiters = array(';', ',', '.', ':');
 
-    public function multiply()
-    {
-        try {
-            $mul = 1;
-            // Replaces any \n characters with comma
-            $numbers = str_replace("n", ",", $this->values);
-            $numbers = explode(',', $numbers);
-
-            foreach ($numbers as $num) {
-                //Ignoring value above 1000
-                if ($num > 1000) {
-                    continue;
-                }
-                //Throwing Exception if number is negative
-                if ($num < 0) {
-                    $neg = array_filter($numbers, function ($x) {
-                        return $x < 0;
-                    });
-                    $neg = implode(',', $neg);
-                    throw new Exception('Negative numbers [' . $neg . '] not allowed.');
-                }
-                $mul *= $num;
+            $data = explode('\\', $this->values);
+            if (count($data) == 3) {
+                $delimiter = $data[1];
+                $numbers = $data[2];
+            } else {
+                $numbers = $data[0];
             }
-            echo $mul;
+
+            if (in_array($delimiter, $delimiters)) {
+                // Replaces any \n characters with comma
+                $numbers = str_replace("n", $delimiter, $numbers);
+                $numbers = explode($delimiter, $numbers);
+                foreach ($numbers as $num) {
+                    //Ignoring value above 1000
+                    if ($num > 1000) {
+                        continue;
+                    }
+
+                    //Throwing Exception if number is negative
+                    if ($num < 0) {
+                        $neg = array_filter($numbers, function ($x) {
+                            return $x < 0;
+                        });
+                        $neg = implode(',', $neg);
+                        throw new Exception('Negative numbers [' . $neg . '] not allowed.');
+                    }
+
+                    if ($op === '+') {
+                        $res += $num;
+                    } else {
+                        $res *= $num;
+                    }
+                }
+                echo $res;
+            } else {
+                throw new Exception('Unknown delimiter.');
+            }
         } catch (Exception $e) {
             echo $e->getMessage();
         }
