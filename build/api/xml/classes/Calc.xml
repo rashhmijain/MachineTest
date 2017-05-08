@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="7" end="68">
-  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="1806" time="2017-05-08T03:39:03+00:00" unixtime="1494214743" sha1="ba8fb10243fb607b16c86d48458cbc927493bacc" relative="Calc.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Calc" namespace="" name="Calc" abstract="false" final="false" start="7" end="103">
+  <file path="/var/www/html/MachineTest" file="Calc.php" realpath="/var/www/html/MachineTest/Calc.php" size="2898" time="2017-05-08T03:52:03+00:00" unixtime="1494215523" sha1="0f2aa6b217ccf9f339fa0889fe8d984d677fd4f2" relative="Calc.php"/>
   <docblock>
     <description compact="Calc implements the calulation methods."/>
   </docblock>
@@ -24,6 +24,15 @@
   <method name="add" start="40" end="67" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Count the sum of the arguments upto n numbers."/>
+      <return type="integer"/>
+      <throws description="Exception if number is negative" type="object">
+        <type full="an" namespace="" name="an"/>
+      </throws>
+    </docblock>
+  </method>
+  <method name="multiply" start="75" end="102" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Calculate multiplication of the arguments, upto n numbers."/>
       <return type="integer"/>
       <throws description="Exception if number is negative" type="object">
         <type full="an" namespace="" name="an"/>

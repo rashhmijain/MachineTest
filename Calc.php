@@ -65,4 +65,39 @@ class Calc
             echo $e->getMessage();
         }
     }
+
+    /**
+     * Calculate multiplication of the arguments, upto n numbers.
+     * @return integer
+     * @throws an Exception if number is negative
+     */
+
+    public function multiply()
+    {
+        try {
+            $mul = 1;
+            // Replaces any \n characters with comma
+            $numbers = str_replace("n", ",", $this->values);
+            $numbers = explode(',', $numbers);
+
+            foreach ($numbers as $num) {
+                //Ignoring value above 1000
+                if ($num > 1000) {
+                    continue;
+                }
+                //Throwing Exception if number is negative
+                if ($num < 0) {
+                    $neg = array_filter($numbers, function ($x) {
+                        return $x < 0;
+                    });
+                    $neg = implode(',', $neg);
+                    throw new Exception('Negative numbers [' . $neg . '] not allowed.');
+                }
+                $mul *= $num;
+            }
+            echo $mul;
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
+    }
 }
