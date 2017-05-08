@@ -46,7 +46,11 @@ class Calc
             $numbers = explode(',', $numbers);
             foreach ($numbers as $num) {
                 if($num < 0) {
-                    throw new Exception('Negative numbers not allowed.');
+                    $neg = array_filter($numbers, function($x) {
+                        return $x < 0;
+                    });
+                    $neg = implode(',', $neg);
+                    throw new Exception('Negative numbers [' . $neg . '] not allowed.');
                 }
                 $sum += $num;
             }
