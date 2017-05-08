@@ -31,4 +31,18 @@ class Calc
             echo $e->getMessage();
         }
     }
+
+    /**
+     * Count the sum of the arguments upto n numbers.
+     * @return integer
+     */
+    public function add()
+    {
+        try {
+            $numbers = explode(',', $this->values);
+            echo array_sum($numbers);
+        } catch(Exception $e) {
+            echo $e->getMessage();
+        }
+    }
 }
