@@ -39,7 +39,9 @@ class Calc
     public function add()
     {
         try {
-            $numbers = explode(',', $this->values);
+            // Replaces any \n characters with comma
+            $numbers = str_replace("n", ",", $this->values);
+            $numbers = explode(',', $numbers);
             echo array_sum($numbers);
         } catch (Exception $e) {
             echo $e->getMessage();

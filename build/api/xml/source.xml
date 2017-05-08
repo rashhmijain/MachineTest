@@ -2,7 +2,7 @@
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/var/www/html/MachineTest">
     <file name="Calculator.php" size="596" time="2017-05-08T02:49:43+00:00" unixtime="1494211783" sha1="d696e08aff918e1e386e5d4d462985be849a6fd4" xml="tokens/Calculator.php.xml"/>
-    <file name="Calc.php" size="1053" time="2017-05-08T02:49:34+00:00" unixtime="1494211774" sha1="04b32c12cb1ca606cf103e36e04db0780a40932e" xml="tokens/Calc.php.xml"/>
+    <file name="Calc.php" size="1162" time="2017-05-08T03:02:48+00:00" unixtime="1494212568" sha1="193b76b9d188798f3daff6915b0b8b66ca3318b4" xml="tokens/Calc.php.xml"/>
     <dir name="tests">
       <file name="CalculatorTest.php" size="0" time="2017-05-07T16:33:05+00:00" unixtime="1494174785" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" xml="tokens/tests/CalculatorTest.php.xml"/>
     </dir>
