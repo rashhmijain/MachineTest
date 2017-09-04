@@ -3,7 +3,6 @@
 /**
  * Calc implements the calulation methods.
  */
-
 class Calc
 {
     /** @var string Should contain command line arguments */
@@ -13,11 +12,13 @@ class Calc
     {
         $this->values = $params;
     }
-    
+
     /**
      * Count the sum of the arguments upto 2 numbers.
-     * @return integer
+     *
      * @throws Exeception If arguments are more than two
+     *
+     * @return int
      */
     public function sum()
     {
@@ -34,9 +35,12 @@ class Calc
 
     /**
      * Perform operation on arguments based on parameter passed.
+     *
      * @param string
-     * @return integer
+     *
      * @throws an Exception if number is negative
+     *
+     * @return int
      */
     public function operation($op)
     {
@@ -51,7 +55,7 @@ class Calc
 
             $delimiter = ',';
             //Assuming this list of delimiters
-            $delimiters = array(';', ',', '.', ':');
+            $delimiters = [';', ',', '.', ':'];
 
             $data = explode('\\', $this->values);
             if (count($data) == 3) {
@@ -63,7 +67,7 @@ class Calc
 
             if (in_array($delimiter, $delimiters)) {
                 // Replaces any \n characters with comma
-                $numbers = str_replace("n", $delimiter, $numbers);
+                $numbers = str_replace('n', $delimiter, $numbers);
                 $numbers = explode($delimiter, $numbers);
                 foreach ($numbers as $num) {
                     //Ignoring value above 1000
@@ -77,7 +81,8 @@ class Calc
                             return $x < 0;
                         });
                         $neg = implode(',', $neg);
-                        throw new Exception('Negative numbers [' . $neg . '] not allowed.');
+
+                        throw new Exception('Negative numbers ['.$neg.'] not allowed.');
                     }
 
                     if ($op === '+') {
