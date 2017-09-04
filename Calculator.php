@@ -1,11 +1,11 @@
 <?php
 
 require_once 'Calc.php';
- 
+
 try {
     if (isset($argv[1]) && count($argv) > 0) {
         if ($argv[1] == 'sum' || $argv[1] == 'add' || $argv[1] == 'multiply') {
-            $arg_value = $argv[2] ?? 0 ;
+            $arg_value = $argv[2] ?? 0;
             if ($arg_value == '\\') {
                 throw new InvalidArgumentException('Invalid parameter.');
             }
